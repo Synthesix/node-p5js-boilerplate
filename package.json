@@ -1,0 +1,27 @@
+{
+  "name": "p5js-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for p5js projects with debug tools.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node ./node_modules/nodemon/bin/nodemon.js src/server.js",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js src/server.js --exec \"npm run lint && node\" ",
+    "lint": "./node_modules/.bin/eslint server.js"
+  },
+  "author": "Andreas Scheipers",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "p5": "^0.5.16"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1"
+  }
+}
